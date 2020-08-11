@@ -1,0 +1,31 @@
+2020-05-06 14:10:52.378 INFO  [main][c.x.d.XagentApplication].logStarting: 55 - Starting XagentApplication on SubMs.local with PID 93100 (/Users/jonty/iworks/20.front/xagent_server/target/classes started by jonty in /Users/jonty/iworks/20.front/xagent_server)
+2020-05-06 14:10:52.382 INFO  [main][c.x.d.XagentApplication].logStartupProfileInfo: 655 - The following profiles are active: dev
+2020-05-06 14:10:53.057 WARN  [main][o.m.s.m.ClassPathMapperScanner].warn: 64 - No MyBatis mapper was found in '[com.xagent.dyin]' package. Please check your configuration.
+2020-05-06 14:10:53.345 INFO  [main][o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker].postProcessAfterInitialization: 330 - Bean 'asyncTaskConfig' of type [com.xagent.dyin.config.AsyncTaskConfig$$EnhancerBySpringCGLIB$$3064ab24] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-06 14:10:53.824 INFO  [main][o.s.b.w.e.t.TomcatWebServer].initialize: 92 - Tomcat initialized with port(s): 5090 (http)
+2020-05-06 14:10:53.837 INFO  [main][o.a.c.h.Http11NioProtocol].log: 173 - Initializing ProtocolHandler ["http-nio-5090"]
+2020-05-06 14:10:53.837 INFO  [main][o.a.c.c.StandardService].log: 173 - Starting service [Tomcat]
+2020-05-06 14:10:53.838 INFO  [main][o.a.c.c.StandardEngine].log: 173 - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-05-06 14:10:53.919 INFO  [main][o.a.c.c.C.[.[.[/]].log: 173 - Initializing Spring embedded WebApplicationContext
+2020-05-06 14:10:53.920 INFO  [main][o.s.w.c.ContextLoader].prepareWebApplicationContext: 284 - Root WebApplicationContext: initialization completed in 1459 ms
+2020-05-06 14:10:53.998 INFO  [main][c.a.d.s.b.a.DruidDataSourceAutoConfigure].dataSource: 56 - Init DruidDataSource
+2020-05-06 14:10:55.747 INFO  [main][c.a.d.p.DruidDataSource].init: 1003 - {dataSource-1} inited
+2020-05-06 14:10:57.338 INFO  [main][o.a.c.h.Http11NioProtocol].log: 173 - Starting ProtocolHandler ["http-nio-5090"]
+2020-05-06 14:10:57.372 INFO  [main][o.s.b.w.e.t.TomcatWebServer].start: 204 - Tomcat started on port(s): 5090 (http) with context path ''
+2020-05-06 14:10:57.375 INFO  [main][c.x.d.XagentApplication].logStarted: 61 - Started XagentApplication in 5.634 seconds (JVM running for 6.225)
+2020-05-06 14:10:57.725 INFO  [main][c.x.d.MyApplicationRunner].run: 64 - profile === dev
+2020-05-06 14:10:57.727 INFO  [main][o.s.s.c.ThreadPoolTaskExecutor].initialize: 181 - Initializing ExecutorService
+2020-05-06 14:10:57.731 INFO  [ThreadPoolTaskExecutor-1][c.x.d.t.AsyncDouyinServiceImpl].orderTask: 45 - async-orderTask
+2020-05-06 14:10:57.732 INFO  [ThreadPoolTaskExecutor-2][c.x.d.t.AsyncDouyinServiceImpl].refreshTask: 179 - async-refreshTask
+2020-05-06 14:10:57.732 INFO  [ThreadPoolTaskExecutor-3][c.x.d.t.AsyncDouyinServiceImpl].overTask: 379 - async-overTask
+2020-05-06 14:10:57.733 INFO  [ThreadPoolTaskExecutor-4][c.x.d.t.AsyncKshouServiceImpl].orderTask: 45 - async-orderTask
+2020-05-06 14:10:57.733 INFO  [ThreadPoolTaskExecutor-5][c.x.d.t.AsyncKshouServiceImpl].refreshTask: 179 - async-refreshTask
+2020-05-06 14:10:57.734 INFO  [ThreadPoolTaskExecutor-6][c.x.d.t.AsyncKshouServiceImpl].overTask: 371 - async-overTask
+2020-05-06 14:10:57.734 INFO  [ThreadPoolTaskExecutor-7][c.x.d.t.AsyncRbookServiceImpl].orderTask: 44 - async-orderTask
+2020-05-06 14:10:57.734 INFO  [ThreadPoolTaskExecutor-8][c.x.d.t.AsyncRbookServiceImpl].refreshTask: 126 - async-refreshTask
+2020-05-06 14:10:57.735 INFO  [ThreadPoolTaskExecutor-9][c.x.d.t.AsyncRbookServiceImpl].overTask: 326 - async-overTask
+2020-05-06 14:10:57.735 INFO  [ThreadPoolTaskExecutor-10][c.x.d.t.AsyncHshanServiceImpl].orderTask: 44 - async-orderTask
+2020-05-06 14:10:57.735 INFO  [ThreadPoolTaskExecutor-11][c.x.d.t.AsyncHshanServiceImpl].refreshTask: 126 - async-refreshTask
+2020-05-06 14:10:57.736 INFO  [ThreadPoolTaskExecutor-12][c.x.d.t.AsyncHshanServiceImpl].overTask: 326 - async-overTask
+2020-05-06 14:11:10.706 INFO  [SpringContextShutdownHook][c.a.d.p.DruidDataSource].close: 1965 - {dataSource-1} closing ...
+2020-05-06 14:11:10.710 INFO  [SpringContextShutdownHook][c.a.d.p.DruidDataSource].close: 2037 - {dataSource-1} closed

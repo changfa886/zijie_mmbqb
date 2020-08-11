@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xagent.dyin.db.mapper.ZijieAdminMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.xagent.dyin.db.entity.ZijieAdminEntity">
+        <id column="id" property="id" />
+        <result column="admname" property="admname" />
+        <result column="loginpw" property="loginpw" />
+        <result column="role" property="role" />
+        <result column="nickname" property="nickname" />
+    </resultMap>
+
+</mapper>

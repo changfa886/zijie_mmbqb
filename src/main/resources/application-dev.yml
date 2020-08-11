@@ -1,0 +1,77 @@
+server:
+  tomcat:
+    uri-encoding: UTF-8
+    max-threads: 1000
+    min-spare-threads: 30
+  port: 5093
+  servlet:
+    context-path: /
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://47.100.204.194:5432/zijie_mmbqb
+    username: kshouadm
+    password: PFwealTh0@0
+    druid:
+      initial-size: 5
+      min-idle: 1
+      max-active: 8
+      # 连接等待超时时间
+      max-wait: 30000
+      # 配置检测可以关闭的空闲连接间隔时间
+      time-between-eviction-runsMillis: 60000
+      # 配置连接在池中的最小生存时间
+      min-evictable-idle-timeMillis: 300000
+      # 该选项用来验证数据库连接的有效性 psql可以用 select '1' as txt 或 select version(), oracle可以用select 1 from dual
+      validation-query: select version()
+      test-while-idle: true
+      test-on-borrow: false
+      test-on-return: false
+      # 打开PSCache，并且指定每个连接上PSCache的大小
+      pool-prepared-statements: true
+      max-open-prepared-statements: 20
+      max-pool-prepared-statement-per-connection-size: 20
+      # 配置监控统计拦截的filters, 去掉后监控界面sql无法统计, 'wall'用于防火墙
+      filters: stat
+      connection-properties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+      use-global-data-source-stat: true
+  redis:
+    mode: single # single sentinel
+    # 这里的host是用于 redisTemplate
+    host: 39.100.229.71 # 39.100.229.71
+    port: 6379
+    database: 2
+    password: xxyy2222
+    timeout: 6000
+    lettuce:
+      pool:
+        # 连接池最大连接数（使用负值表示没有限制）
+        max-active: 1000
+        # 连接池中的最大空闲连接
+        max-idle: 100
+        # 连接池中的最小空闲连接
+        min-idle: 10
+        # 连接池最大阻塞等待时间（使用负值表示没有限制）
+        max-wait: 10000ms
+
+# 微信支付-云涌-测试用
+vendor:
+  wx:
+    config:
+      app_id: wxfb18a9f40f7e0bdd
+    pay:
+      key: e691cf2416ade2935b2b0704839840d7
+      mch_id: 1534866471
+    notify:
+      host: 'http://core.zijie.nq165.cn'
+
+bytedance:
+  app:
+    appid: 'tt0b1d7da09427f5a4'
+    appsecret: 'da0026895c5d88613a7133012d454d62963fc800'
+  pay:
+    appid: '800664014618'
+    appsecret: '8we7a232hdmyy3u8t05mjvbk7nx8r4ps7mzg494t'
+    merchantid: '1900066401'

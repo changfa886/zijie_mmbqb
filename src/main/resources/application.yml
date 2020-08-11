@@ -1,0 +1,31 @@
+spring:
+  #  main:
+  #    allow-bean-definition-overriding: true
+  profiles:
+    active: dev
+  # jackson时间格式化
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+
+#mybatis plusxml路径配置
+mybatis-plus:
+  mapper-locations: classpath:mybatis/*.xml
+
+logging:
+  level:
+    root: info
+    com.xagent.dyin: info
+
+alioss:
+  bucket: zijie-mmbqb
+  KeyID: LTAI4Fxg1PWsfyJ2NENPNT4n
+  KeySecret: UTx4vUrX9HLIlOUUcMo1fAbFtg9aG6
+  innerEndPoint: oss-cn-shanghai-internal.aliyuncs.com
+  foreignEndPoint: oss-cn-shanghai.aliyuncs.com
+  foreignHost: https://zijie-mmbqb.oss-cn-beijing.aliyuncs.com
+#  surfixFwidth: '@!banner'
+#  surfixSquare: '@!avatar'
+
+rdtime:
+  token: 72000
